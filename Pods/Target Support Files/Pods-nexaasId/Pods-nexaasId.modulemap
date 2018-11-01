@@ -1,0 +1,6 @@
+module Pods_nexaasId {
+  umbrella header "Pods-nexaasId-umbrella.h"
+
+  export *
+  module * { export * }
+}
