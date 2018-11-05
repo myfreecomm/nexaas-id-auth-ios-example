@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BCD03623A63E0C3239A6B9862134694"
-               BuildableName = "libPods-nexaasId.a"
+               BlueprintIdentifier = "D471C0B597B6D467BF29951343B207F8"
+               BuildableName = "Pods_nexaasId.framework"
                BlueprintName = "Pods-nexaasId"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BCD03623A63E0C3239A6B9862134694"
-            BuildableName = "libPods-nexaasId.a"
+            BlueprintIdentifier = "D471C0B597B6D467BF29951343B207F8"
+            BuildableName = "Pods_nexaasId.framework"
             BlueprintName = "Pods-nexaasId"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

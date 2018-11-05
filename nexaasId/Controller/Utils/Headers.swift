@@ -12,6 +12,6 @@ import Foundation
 public class Headers {
     
     public static func authorization(accessToken: String) -> HTTPHeaders {
-        return ["Authorization": "Bearer \(accessToken)"]
+          return ["Authorization": "Bearer \(accessToken)", "Content-Type": "application/json"]
     }
 }

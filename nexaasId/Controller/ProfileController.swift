@@ -24,13 +24,34 @@ class ProfileController: UIViewController {
         }
     }
     
+    var user: User?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadUI()
 
+    }
+    
+    func loadUI() {
+        
+        if let user = user {
+            
+            uuidLabel.text =  user.uuid
+            nameLabel.text =  user.full_name
+            emailLabel.text =  user.email
+            languageLabel.text =  user.language ?? ""
+            timezoneLabel.text =  user.timezone ?? ""
+        }
+        
+        
     }
     
     
     @IBAction func onOkButtonClicked(_ sender: UIButton) {
+        
+        Singleton.clear()
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
