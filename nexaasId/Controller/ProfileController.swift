@@ -56,8 +56,24 @@ class ProfileController: UIViewController {
     
     @IBAction func onOkButtonClicked(_ sender: UIButton) {
         
-        Singleton.clear()
-        self.dismiss(animated: true, completion: nil)
+        UIJustHUD.shared.showInView(view: self.view)
+        
+        Core.signOut(accessToken: Singleton.accessToken()!) { (statusCode) in
+            
+            if statusCode == 200 {
+                
+                UIJustHUD.shared.hide()
+                Singleton.clear()
+                self.dismiss(animated: true, completion: nil)
+                
+            }else{
+                
+                print("Status code: \(String(describing: statusCode))")
+            }
+            
+        }
     }
+    
+    
     
 }

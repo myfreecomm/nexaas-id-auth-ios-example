@@ -34,5 +34,9 @@ class Url {
         return SANDBOX_URL + "api/v1/profile"
     }
     
+    static func signOut() -> String {
+        return SANDBOX_URL + "applications/sign_out"
+    }
+    
 
 }

@@ -24,5 +24,17 @@ class Core {
             completion(repo, error)
         }
     }
+    
+    static func signOut(accessToken: String,completion: @escaping (_ error: Int?) -> ()) {
+        let url = Url.signOut()
+        let headers = Headers.authorization(accessToken: accessToken)
+        
+        Alamofire.request(url, method: .get, headers: headers).responseJSON { response in
+            
+            let error = response.response?.statusCode
+        
+            completion(error)
+        }
+    }
 
 }
