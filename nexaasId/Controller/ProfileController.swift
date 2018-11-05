@@ -9,7 +9,7 @@
 import UIKit
 
 class ProfileController: UIViewController {
-
+    
     @IBOutlet weak var uuidLabel: UILabel!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -24,21 +24,27 @@ class ProfileController: UIViewController {
         }
     }
     
-    var user: User?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadUI()
-
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.loadUI()
     }
     
     func loadUI() {
         
-        if let user = user {
+        if let user = Singleton.user() {
             
-            uuidLabel.text =  user.uuid
-            nameLabel.text =  user.full_name
+            uuidLabel.text =  user.id
+            nameLabel.text =   user.full_name
             emailLabel.text =  user.email
             languageLabel.text =  user.language ?? ""
             timezoneLabel.text =  user.timezone ?? ""
