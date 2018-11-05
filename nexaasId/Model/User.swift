@@ -11,11 +11,11 @@ import Foundation
 
 struct User: Codable {
     
-    let uuid: String
+    let id: String
     let full_name: String
     let nickname: String
     let email: String
-    let birth: Int
+    let birth: String
     let gender: String?
     let language: String?
     let picture: String?
