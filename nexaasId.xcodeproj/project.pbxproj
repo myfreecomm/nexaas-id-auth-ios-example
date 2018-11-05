@@ -18,8 +18,6 @@
 		4AAE51F0218A422400487C5E /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE51EF218A422400487C5E /* Headers.swift */; };
 		4AAE51F2218A424500487C5E /* UIJustHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE51F1218A424500487C5E /* UIJustHUD.swift */; };
 		4AAE51F4218A473E00487C5E /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE51F3218A473E00487C5E /* Url.swift */; };
-		4AAE51F6218A481000487C5E /* NexaasIdUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE51F5218A481000487C5E /* NexaasIdUser.swift */; };
-		4AAE51F8218A4AB500487C5E /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE51F7218A4AB500487C5E /* Params.swift */; };
 		4AAE51FA218A4FD800487C5E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE51F9218A4FD800487C5E /* ProfileController.swift */; };
 		6F8C78B80EABAF13C432C976 /* Pods_nexaasId.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217823D5D712C056E7974FC9 /* Pods_nexaasId.framework */; };
 /* End PBXBuildFile section */
@@ -39,8 +37,6 @@
 		4AAE51EF218A422400487C5E /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 		4AAE51F1218A424500487C5E /* UIJustHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIJustHUD.swift; sourceTree = "<group>"; };
 		4AAE51F3218A473E00487C5E /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
-		4AAE51F5218A481000487C5E /* NexaasIdUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexaasIdUser.swift; sourceTree = "<group>"; };
-		4AAE51F7218A4AB500487C5E /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 		4AAE51F9218A4FD800487C5E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		89BBC2642BA674282BCE63C5 /* Pods-nexaasId.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nexaasId.release.xcconfig"; path = "Pods/Target Support Files/Pods-nexaasId/Pods-nexaasId.release.xcconfig"; sourceTree = "<group>"; };
 		CD3D3AC29F14057FE32C6E18 /* Pods-nexaasId.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nexaasId.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nexaasId/Pods-nexaasId.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				4AAE51EA218A41F400487C5E /* User.swift */,
-				4AAE51F5218A481000487C5E /* NexaasIdUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,7 +128,6 @@
 				4AAE51ED218A421D00487C5E /* Core.swift */,
 				4AAE51EF218A422400487C5E /* Headers.swift */,
 				4AAE51F3218A473E00487C5E /* Url.swift */,
-				4AAE51F7218A4AB500487C5E /* Params.swift */,
 				4A2E48432190360F001CE48C /* Singleton.swift */,
 			);
 			path = Utils;
@@ -158,7 +152,7 @@
 				4AAE51CC218A3E8600487C5E /* Sources */,
 				4AAE51CD218A3E8600487C5E /* Frameworks */,
 				4AAE51CE218A3E8600487C5E /* Resources */,
-				88ACA7EFD6710BDC7969F1ED /* [CP] Embed Pods Frameworks */,
+				9A467FF9A0031AA7B1F3BE54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,7 +237,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		88ACA7EFD6710BDC7969F1ED /* [CP] Embed Pods Frameworks */ = {
+		9A467FF9A0031AA7B1F3BE54 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,7 +249,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -264,7 +258,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -278,9 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AAE51F8218A4AB500487C5E /* Params.swift in Sources */,
 				4AAE51EB218A41F400487C5E /* User.swift in Sources */,
-				4AAE51F6218A481000487C5E /* NexaasIdUser.swift in Sources */,
 				4AAE51F0218A422400487C5E /* Headers.swift in Sources */,
 				4AAE51F4218A473E00487C5E /* Url.swift in Sources */,
 				4AAE51FA218A4FD800487C5E /* ProfileController.swift in Sources */,

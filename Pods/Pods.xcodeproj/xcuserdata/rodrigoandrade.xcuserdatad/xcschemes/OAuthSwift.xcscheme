@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE3B335F41C2F3B3779C1DA0986E12CF"
-               BuildableName = "Pods_nexaasId.framework"
-               BlueprintName = "Pods-nexaasId"
+               BlueprintIdentifier = "EF83FCC10E7453ACCB801B656501E2F6"
+               BuildableName = "OAuthSwift.framework"
+               BlueprintName = "OAuthSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AE3B335F41C2F3B3779C1DA0986E12CF"
-            BuildableName = "Pods_nexaasId.framework"
-            BlueprintName = "Pods-nexaasId"
+            BlueprintIdentifier = "EF83FCC10E7453ACCB801B656501E2F6"
+            BuildableName = "OAuthSwift.framework"
+            BlueprintName = "OAuthSwift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

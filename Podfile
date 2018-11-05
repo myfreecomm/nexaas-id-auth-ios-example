@@ -6,7 +6,6 @@ target 'nexaasId' do
     pod 'Alamofire'
     pod 'CodableAlamofire'
     pod 'IQKeyboardManager'
-    pod 'p2.OAuth2'
-
+    pod 'OAuthSwift'
 
 end
