@@ -16,7 +16,7 @@ class Params {
     }
     
     static func signIn(username: String, password: String) -> [String: Any] {
-        return ["username": username, "password": password, "grant_type": Url.GRANT_TYPE_CREDENTIALS, "client_id": Url.CLIENT_ID, "client_secret": Url.CLIENT_SECRET]
+        return ["username": username, "password": password, "grant_type": Url.GRANT_TYPE_CREDENTIALS, "client_id": Url.CLIENT_ID, "client_secret": Url.CLIENT_SECRET,"Content-Type": "application/json"]
     }
     
 }
